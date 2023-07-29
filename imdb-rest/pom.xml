@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>chistorrin.projects</groupId>
-    <artifactId>imdb-application</artifactId>
+    <artifactId>imdb-rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -19,5 +19,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
 </project>

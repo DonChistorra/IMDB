@@ -24,8 +24,10 @@
 
 	<modules>
 		<module>imdb-application</module>
-		<module>imdb-infraestructure</module>
+		<module>imdb-boot</module>
 		<module>imdb-domain</module>
+		<module>imdb-infraestructure</module>
+		<module>imdb-rest</module>
 	</modules>
 
 

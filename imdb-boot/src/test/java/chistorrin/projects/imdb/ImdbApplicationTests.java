@@ -1,4 +1,4 @@
-package chistorrin.projects.imdb.application;
+package chistorrin.projects.imdb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
