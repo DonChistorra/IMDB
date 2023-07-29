@@ -26,6 +26,11 @@
             <artifactId>imdb-rest</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>chistorrin.projects</groupId>
+            <artifactId>imdb-infraestructure</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 
