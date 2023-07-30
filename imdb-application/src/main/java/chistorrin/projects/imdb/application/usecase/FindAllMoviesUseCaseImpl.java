@@ -1,7 +1,7 @@
-package chistorrin.projects.imdb.application;
+package chistorrin.projects.imdb.application.usecase;
 
 import chistorrin.projects.imdb.domain.entity.Movie;
-import chistorrin.projects.imdb.domain.repository.MovieRepository;
+import chistorrin.projects.imdb.domain.repository.movie.MovieRepository;
 import chistorrin.projects.imdb.domain.usecase.FindAllMoviesUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

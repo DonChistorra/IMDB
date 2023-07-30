@@ -1,7 +1,7 @@
 package chistorrin.projects.imdb.infraestructure.repository.impl.movie;
 
 import chistorrin.projects.imdb.domain.entity.Movie;
-import chistorrin.projects.imdb.domain.repository.MovieRepository;
+import chistorrin.projects.imdb.domain.repository.movie.MovieRepository;
 import chistorrin.projects.imdb.infraestructure.mapper.MovieMapper;
 import chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.movie.MovieEntity;
 import chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.movie.MovieJPARepository;

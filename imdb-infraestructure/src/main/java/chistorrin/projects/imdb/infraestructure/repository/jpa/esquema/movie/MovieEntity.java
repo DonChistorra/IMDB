@@ -17,7 +17,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(schema = "IMDB", name = "MOVIE")
+@Table(schema = "IMDB", name = "MOVIES")
 @Getter
 @Setter
 @NoArgsConstructor
