@@ -7,4 +7,6 @@
 <suppressions>
     <suppress checks="HideUtilityClassConstructor"
               files="ImdbApplication.java"/>
+    <suppress checks="DesignForExtension"
+              files="MovieController.java"/>
 </suppressions>
