@@ -9,4 +9,6 @@
               files="ImdbApplication.java"/>
     <suppress checks="DesignForExtension"
               files="MovieController.java"/>
+    <suppress checks="DesignForExtension"
+              files="ActorController.java"/>
 </suppressions>
