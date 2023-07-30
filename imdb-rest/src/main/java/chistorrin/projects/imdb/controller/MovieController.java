@@ -1,24 +1,29 @@
 package chistorrin.projects.imdb.controller;
 
-import chistorrin.projects.imdb.domain.entity.Movie;
 import chistorrin.projects.imdb.domain.usecase.FindAllMoviesUseCase;
+import chistorrin.projects.imdb.mapper.MovieRestMapper;
+import chistorring.projects.imdb.api.MoviesApi;
+import chistorring.projects.imdb.api.model.FindAllMoviesResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-public class MovieController {
+public class MovieController implements MoviesApi {
 
 	private final FindAllMoviesUseCase findAllMoviesUseCase;
 
-	@GetMapping(value = "/movies", produces = "application/json")
-	public ResponseEntity<List<Movie>> listAllMovies() {
-		return new ResponseEntity<>(this.findAllMoviesUseCase.findAllMovies(),
+	private final MovieRestMapper movieRestMapper;
+
+	@Override
+	public ResponseEntity<List<FindAllMoviesResponse>> findAllMovies() {
+		return new ResponseEntity<>(
+			this.movieRestMapper.toRestResponseList(
+				this.findAllMoviesUseCase.findAllMovies()),
 			HttpStatus.OK);
 	}
 
