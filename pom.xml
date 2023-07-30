@@ -20,6 +20,7 @@
 
 	<properties>
 		<java.version>17</java.version>
+		<google-java-format.version>HEAD-SNAPSHOT</google-java-format.version>
 	</properties>
 
 	<modules>
@@ -51,4 +52,22 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.spring.javaformat</groupId>
+				<artifactId>spring-javaformat-maven-plugin</artifactId>
+				<version>0.0.39</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<inherited>true</inherited>
+						<goals>
+							<goal>validate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

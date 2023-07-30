@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MovieController {
 
-    @GetMapping(value = "/movies", produces = "application/json")
-    public ResponseEntity<String> listAllMovies(){
-        return new ResponseEntity<>("PRUEBAS", HttpStatus.OK);
-    }
+	@GetMapping(value = "/movies", produces = "application/json")
+	public ResponseEntity<String> listAllMovies() {
+		return new ResponseEntity<>("PRUEBAS", HttpStatus.OK);
+	}
+
 }
