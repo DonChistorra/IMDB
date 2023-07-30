@@ -90,7 +90,13 @@
                             <apiPackage>chistorring.projects.imdb.api</apiPackage>
                             <modelPackage>chistorring.projects.imdb.api.model</modelPackage>
                             <generatorName>spring</generatorName>
+                            <!-- Prevents ApiUtil class from being generated -->
+                            <generateSupportingFiles>false</generateSupportingFiles>
+                            <!-- Default method don't mock data (mandatory if generateSupportingFiles = false) -->
+                            <skipOperationExample>true</skipOperationExample>
                             <configOptions>
+                                <!-- Prevents Controller from being generated-->
+                                <interfaceOnly>true</interfaceOnly>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                             </configOptions>
                         </configuration>
