@@ -3,7 +3,7 @@ package chistorrin.projects.imdb.controller;
 import chistorrin.projects.imdb.domain.usecase.FindAllActorsUseCase;
 import chistorrin.projects.imdb.mapper.ActorRestMapper;
 import chistorring.projects.imdb.api.ActorsApi;
-import chistorring.projects.imdb.api.model.FindAllActorsResponse;
+import chistorring.projects.imdb.api.model.ActorRestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +20,7 @@ public class ActorController implements ActorsApi {
     private final ActorRestMapper actorRestMapper;
 
     @Override
-    public ResponseEntity<List<FindAllActorsResponse>> findAllActors() {
+    public ResponseEntity<List<ActorRestDTO>> findAllActors() {
         return new ResponseEntity<>(
             this.actorRestMapper.toRestResponseList(
                 this.findAllActorsUseCase.findAllActors()),

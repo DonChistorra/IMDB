@@ -40,7 +40,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/FindAllActorsResponse'
+                  $ref: '#/components/schemas/Actor'
         '400':
           description: Bad Request
         '500':
@@ -60,7 +60,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/FindAllMoviesResponse'
+                  $ref: '#/components/schemas/Movie'
         '400':
           description: Bad Request
         '500':
@@ -89,14 +89,14 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/GetCastingByMovieIdResponse'
+                  $ref: '#/components/schemas/Casting'
         '400':
           description: Bad Request
         '500':
           description: Internal error
 components:
   schemas:
-    FindAllActorsResponse:
+    Actor:
       type: object
       properties:
         id:
@@ -109,7 +109,7 @@ components:
         dateOfBirth:
           type: string
           format: date
-    FindAllMoviesResponse:
+    Movie:
       type: object
       properties:
         id:
@@ -117,7 +117,7 @@ components:
           format: int32
         title:
           type: string
-    GetCastingByMovieIdResponse:
+    Casting:
       type: object
       properties:
         actorFullName:

@@ -4,7 +4,7 @@ import chistorrin.projects.imdb.domain.entity.CastingMember;
 import chistorrin.projects.imdb.domain.usecase.GetCastingByMovieIdUseCase;
 import chistorrin.projects.imdb.mapper.CastingMemberRestMapper;
 import chistorring.projects.imdb.api.CastingApi;
-import chistorring.projects.imdb.api.model.GetCastingByMovieIdResponse;
+import chistorring.projects.imdb.api.model.CastingRestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class CastingController implements CastingApi {
     private final CastingMemberRestMapper castingMemberRestMapper;
 
     @Override
-    public ResponseEntity<List<GetCastingByMovieIdResponse>>
+    public ResponseEntity<List<CastingRestDTO>>
         getCastingByMovieId(final Long movieId) {
             List<CastingMember> response =
                 this.getCastingByMovieIdUseCase.getCastingByMovieId(movieId);
