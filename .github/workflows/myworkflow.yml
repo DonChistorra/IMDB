@@ -1,0 +1,26 @@
+name: Java CI
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  build_artifact:
+    runs-on: ubuntu-20.04-LTS
+    steps:
+      - name: Checkout latest changes
+        uses: actions/checkout@v3
+        with:
+          repository: DonChistorra/IMDB
+      - name: Setup Java JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'oracle'
+          java-version: 17
+      - name: Build Artifact (Without Tests)
+        run: mvn --batch-mode --update-snapshots package -DskipTests=true
