@@ -22,6 +22,8 @@ tags:
     description: Everything about your most loved or most hated movies
   - name: actor
     description: Information about the registered actors
+  - name: casting
+    description: Set of actor who participated in a movie
 paths:
   /actors:
     get:
