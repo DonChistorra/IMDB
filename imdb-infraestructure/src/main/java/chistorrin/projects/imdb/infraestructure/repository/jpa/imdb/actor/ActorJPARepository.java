@@ -1,4 +1,4 @@
-package chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.actor;
+package chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.actor;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

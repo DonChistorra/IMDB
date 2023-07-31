@@ -1,4 +1,4 @@
-package chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.actor;
+package chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.actor;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -16,7 +16,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
-@Table(schema = "IMDB", name = "ACTORS")
+@Table(schema = "IMDB", name = "ACTOR")
 @Getter
 @Setter
 @NoArgsConstructor

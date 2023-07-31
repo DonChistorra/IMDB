@@ -1,4 +1,4 @@
-package chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.movie;
+package chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.movie;
 
 
 
@@ -17,7 +17,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(schema = "IMDB", name = "MOVIES")
+@Table(schema = "IMDB", name = "MOVIE")
 @Getter
 @Setter
 @NoArgsConstructor

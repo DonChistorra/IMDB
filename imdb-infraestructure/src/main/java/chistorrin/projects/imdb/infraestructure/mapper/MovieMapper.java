@@ -1,7 +1,7 @@
 package chistorrin.projects.imdb.infraestructure.mapper;
 
 import chistorrin.projects.imdb.domain.entity.Movie;
-import chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.movie.MovieEntity;
+import chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.movie.MovieEntity;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 

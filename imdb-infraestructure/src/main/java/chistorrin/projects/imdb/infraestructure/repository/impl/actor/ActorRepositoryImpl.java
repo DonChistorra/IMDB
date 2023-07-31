@@ -3,8 +3,8 @@ package chistorrin.projects.imdb.infraestructure.repository.impl.actor;
 import chistorrin.projects.imdb.domain.entity.Actor;
 import chistorrin.projects.imdb.domain.repository.actor.ActorRepository;
 import chistorrin.projects.imdb.infraestructure.mapper.ActorMapper;
-import chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.actor.ActorEntity;
-import chistorrin.projects.imdb.infraestructure.repository.jpa.esquema.actor.ActorJPARepository;
+import chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.actor.ActorEntity;
+import chistorrin.projects.imdb.infraestructure.repository.jpa.imdb.actor.ActorJPARepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
