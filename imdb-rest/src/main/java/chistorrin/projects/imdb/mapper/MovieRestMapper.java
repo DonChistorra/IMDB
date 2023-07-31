@@ -1,7 +1,7 @@
 package chistorrin.projects.imdb.mapper;
 
 import chistorrin.projects.imdb.domain.entity.Movie;
-import chistorring.projects.imdb.api.model.FindAllMoviesResponse;
+import chistorring.projects.imdb.api.model.MovieRestDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface MovieRestMapper {
 
-    FindAllMoviesResponse toRestResponse(Movie movie);
+    MovieRestDTO toRestResponse(Movie movie);
 
-    List<FindAllMoviesResponse> toRestResponseList(List<Movie> movieList);
+    List<MovieRestDTO> toRestResponseList(List<Movie> movieList);
 }

@@ -3,7 +3,7 @@ package chistorrin.projects.imdb.controller;
 import chistorrin.projects.imdb.domain.usecase.FindAllMoviesUseCase;
 import chistorrin.projects.imdb.mapper.MovieRestMapper;
 import chistorring.projects.imdb.api.MoviesApi;
-import chistorring.projects.imdb.api.model.FindAllMoviesResponse;
+import chistorring.projects.imdb.api.model.MovieRestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +20,7 @@ public class MovieController implements MoviesApi {
 	private final MovieRestMapper movieRestMapper;
 
 	@Override
-	public ResponseEntity<List<FindAllMoviesResponse>> findAllMovies() {
+	public ResponseEntity<List<MovieRestDTO>> findAllMovies() {
 		return new ResponseEntity<>(
 			this.movieRestMapper.toRestResponseList(
 				this.findAllMoviesUseCase.findAllMovies()),
