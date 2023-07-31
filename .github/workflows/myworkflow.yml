@@ -13,6 +13,10 @@ jobs:
   build_artifact:
     runs-on: ubuntu-20.04-LTS
     steps:
+      - name: Cancel redundant previous run
+        uses: styfle/cancel-workflow-action
+        with:
+          access_token: ${{ github.token }}
       - name: Checkout latest changes
         uses: actions/checkout@v3
         with:
