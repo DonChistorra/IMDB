@@ -11,7 +11,7 @@ on:
 
 jobs:
   build_artifact:
-    runs-on: ubuntu-20.04-LTS
+    runs-on: ubuntu-latest
     steps:
       - name: Cancel redundant previous run
         uses: styfle/cancel-workflow-action@0.11.0
