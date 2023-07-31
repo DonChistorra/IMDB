@@ -11,4 +11,6 @@
               files="MovieController.java"/>
     <suppress checks="DesignForExtension"
               files="ActorController.java"/>
+    <suppress checks="DesignForExtension"
+              files="CastingController.java"/>
 </suppressions>
