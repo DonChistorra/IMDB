@@ -25,5 +25,4 @@ public class MovieActorRoleInMovieEntity implements Serializable {
     @EmbeddedId
     private MovieActorRoleInMovieEntityPK pk;
 
-
 }

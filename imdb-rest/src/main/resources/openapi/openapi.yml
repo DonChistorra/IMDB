@@ -120,7 +120,7 @@ components:
     GetCastingByMovieIdResponse:
       type: object
       properties:
-        actor:
+        actorFullName:
           type: string
           example: Bradd Pitt
         role:
