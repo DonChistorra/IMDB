@@ -13,4 +13,5 @@
               files="ActorController.java"/>
     <suppress checks="DesignForExtension"
               files="CastingController.java"/>
+    <suppress files="/target/generated-sources/*" checks="[a-zA-Z0-9]*"/>
 </suppressions>
