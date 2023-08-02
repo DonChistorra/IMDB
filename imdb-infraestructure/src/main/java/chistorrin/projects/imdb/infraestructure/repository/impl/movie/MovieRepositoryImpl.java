@@ -27,4 +27,11 @@ public class MovieRepositoryImpl implements MovieRepository {
         List<MovieEntity> resultList = this.movieJPARepository.findAll();
         return this.movieMapper.toDomainList(resultList);
     }
+
+    @Override
+    public final Movie createMovie(final Movie newMovie) {
+        MovieEntity entityResult = this.movieJPARepository.save(
+            this.movieMapper.toEntity(newMovie));
+        return this.movieMapper.toDomain(entityResult);
+    }
 }

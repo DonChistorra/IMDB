@@ -65,6 +65,29 @@ paths:
           description: Bad Request
         '500':
           description: Internal error
+    post:
+      tags:
+        - movie
+      summary: Add a new movie to the catalog
+      description: Register a new movie in DB
+      operationId: createMovie
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Movie'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Movie'
+        '400':
+          description: Bad Request
+        '500':
+          description: Internal error
   /casting/{movieId}:
     get:
       tags:
@@ -110,6 +133,8 @@ components:
           type: string
           format: date
     Movie:
+      required:
+        - title
       type: object
       properties:
         id:
@@ -117,6 +142,9 @@ components:
           format: int32
         title:
           type: string
+        dateOfRelease:
+          type: string
+          format: date
     Casting:
       type: object
       properties:

@@ -12,4 +12,8 @@ public interface MovieRestMapper {
     MovieRestDTO toRestResponse(Movie movie);
 
     List<MovieRestDTO> toRestResponseList(List<Movie> movieList);
+
+    Movie toDomainEntity(MovieRestDTO movie);
+
+    List<Movie> toDomainEntityList(List<MovieRestDTO> movieList);
 }
