@@ -89,6 +89,7 @@
                             <generatorName>spring</generatorName>
                             <apiPackage>chistorring.projects.imdb.api</apiPackage>
                             <modelPackage>chistorring.projects.imdb.api.model</modelPackage>
+                            <modelNameSuffix>RestDTO</modelNameSuffix>
                             <generatorName>spring</generatorName>
                             <!-- Prevents ApiUtil class from being generated -->
                             <generateSupportingFiles>false</generateSupportingFiles>

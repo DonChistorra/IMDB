@@ -15,6 +15,7 @@ import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.LocalDate;
 
 @Entity
 @Table(schema = "IMDB", name = "MOVIE")
@@ -34,6 +35,10 @@ public class MovieEntity implements Serializable {
 
 	@Column(name = "TITLE")
 	private String title;
+
+	@Column(name = "RELEASE_DATE")
+	private LocalDate dateOfRelease;
+
 
 }
 

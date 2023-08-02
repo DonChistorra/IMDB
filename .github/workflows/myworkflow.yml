@@ -27,4 +27,4 @@ jobs:
           distribution: 'oracle'
           java-version: 17
       - name: Build Artifact (Without Tests)
-        run: mvn --batch-mode --update-snapshots package -DskipTests=true
+        run: mvn --batch-mode --update-snapshots clean install package -DskipTests=true
